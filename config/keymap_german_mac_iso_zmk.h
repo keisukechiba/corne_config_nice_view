@@ -224,7 +224,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_ASTR &kp KP_MULTIPLY // *
 // #define DE_STAR &kp RBRC // "*" DE_ASTR
 // Row 3
-#define DE_QUOT &kp LS(BSLH) // '
+#define DE_QUOT &kp SINGLE_QUOTE// '
 // Row 4
 #define DE_RABK &kp LS(GRAVE) // >
 #define DE_SCLN &kp LS(COMMA) // ;

@@ -290,7 +290,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_CCCE &kp LA(C)    // Ç
 #define DE_SQRT &kp LA(V)    // √
 #define DE_INTG &kp LA(B)    // ∫
-#define DE_TILD &kp LA(N)    // ~ (dead)
+#define DE_TILD &kp TILDE    // ~ 
 #define DE_MICR &kp LA(M)    // µ
 #define DE_INFN &kp LA(COMMA) // ∞
 #define DE_ELLP &kp LA(DOT)  // …

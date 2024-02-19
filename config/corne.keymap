@@ -135,7 +135,7 @@ SPDX-License-Identifier: MIT
        /*.------------------------------------------------.                         .-------------------------------------------------.
          |    F1  |  F2   |   F3  |   F4  | SPELL |TRADUCT|                         |DE_F13 | DE_F14|DE_F15 | DE_F16| BRI_DN| BRI_UP  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |    F5  |  F6   |   F7  |    F8 |   \   |ALFRED |                         |C-A-DEL|DE_F19 |DE_F20 |CLR_LIN|PAGE_UP|         |
+         |    F5  |  F6   |   F7  |    F8 |       |ALFRED |                         |C-A-DEL|DE_F19 |DE_F20 |CLR_LIN|PAGE_UP|         |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |    F9  |   F10 |   F11 |   F12 |ALFRED |EMOJI  |                         |L_SHIFT|L_SHIFT|R_SHIFT|  HOME |PAGE_DO|    END  |
          '----------------------------------------------------------|       |----------------------------------------------------------'
@@ -145,7 +145,7 @@ SPDX-License-Identifier: MIT
          label = "FUNCTION";
          bindings = <
          DE_F1  DE_F2   DE_F3   DE_F4    SPELL    TRADUCT                   &macro6   &macro5   &macro8    &macro2   DE_BRI_DN  DE_BRI_UP
-         DE_F5  DE_F6   DE_F7   DE_F8    DE_BSLS  SNIPPET                   TASKM     &macro1   &macro3    &macro4   DE_PG_UP   &macro9
+         DE_F5  DE_F6   DE_F7   DE_F8    XXX      SNIPPET                   TASKM     &macro1   &macro3    &macro4   DE_PG_UP   &macro9
          DE_F9  DE_F10  DE_F11  DE_F12   CLIPBRD  EMOJI                     DE_LSHFT  DE_LSHFT  DE_RSHFT   DE_HOME   DE_PG_DN   DE_END
                                          DE_LCTRL DE_LGUI  DE_LALT  DE_TAB  DE_ACUT   DE_LCTRL
                               >;

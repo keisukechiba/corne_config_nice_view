@@ -218,8 +218,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LPRN &kp LS(N8)    // (
 #define DE_RPRN &kp LS(N9)    // )
 #define DE_EQL  &kp LS(N0)    // =
-#define DE_QUES &kp LS(MINUS)   // ?
-#define DE_GRV  &kp LS(EQUAL) // ` (dead)
+#define DE_QUES &kp QUESTION   // ?
+#define DE_GRV  &kp GRAVE // ` 
 // Row 2
 #define DE_ASTR &kp KP_MULTIPLY // *
 // #define DE_STAR &kp RBRC // "*" DE_ASTR

@@ -214,7 +214,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_DLR  &kp LS(N4)    // $
 #define DE_PERC &kp LS(N5)    // %
 #define DE_AMPR &kp LS(N6)    // &
-#define DE_SLSH &kp LS(N7)    // /
+#define DE_SLSH &kp KP_SLASH  // /
 #define DE_LPRN &kp LS(N8)    // (
 #define DE_RPRN &kp LS(N9)    // )
 #define DE_EQL  &kp LS(N0)    // =

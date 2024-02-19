@@ -219,7 +219,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RPRN &kp LS(N9)    // )
 #define DE_EQL  &kp LS(N0)    // =
 #define DE_QUES &kp QUESTION   // ?
-#define DE_GRV  &kp GRAVE // ` 
+#define DE_GRV  &kp LEFT_BRACE // ` 
 // Row 2
 #define DE_ASTR &kp KP_MULTIPLY // *
 // #define DE_STAR &kp RBRC // "*" DE_ASTR
@@ -253,7 +253,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LBRC &kp LEFT_BRACKET    // [
 #define DE_RBRC &kp BACKSLASH    // ]
 #define DE_PIPE &kp PIPE      // |
-#define DE_LCBR &kp LEFT_BRACE    // {
+#define DE_LCBR &kp RIGHT_BRACE  // {
 #define DE_RCBR &kp PIPE      // }
 #define DE_NEQL &kp LA(N0)    // ≠
 #define DE_IQUE &kp LA(MINUS)   // ¿

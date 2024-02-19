@@ -70,7 +70,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPELL &kp LC(LG(D))
 #define TRADUCT &kp LS(LA(T))
 #define SNIPPET &kp LA(LG(G))
-#define CLIPBRD &kp LA(LG(V))
+#define CLIPBRD &kp LG(V)
 #define EMOJI &kp LC(LG(SPACE))
 #define TASKM &kp LC(LA(DEL)) // C-A-DEL
 

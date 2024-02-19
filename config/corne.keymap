@@ -93,19 +93,19 @@ SPDX-License-Identifier: MIT
       // ### number_layer {{{
       number_layer {
        /*.-------------------------------------------------.                         .-------------------------------------------------.
-         |   0     |   1   |   2   |   3   |   -   |   +   |                         |       |       |   :   |   ;   |       |BACKSPC  |
+         |   0     |   1   |   2   |   3   |   -   |   +   |                         |   ß   |   Ü   |   Ä   |   Ö   |   Ñ   |BACKSPC  |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |CAPS_LOCK|   4   |   5   |   6   |   /   |   *   |                         |   #   |   ~   |       |   @   |  UP   |   ENTER |
+         |CAPS_LOCK|   4   |   5   |   6   |   /   |   *   |                         |   #   |   ~   |   ?   |   @   |  UP   |   ENTER |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         | SHIFT   |   7   |   8   |   9   |   %   |   =   |                         |   .   |       |       |  LEFT |  DOWN |   RIGHT |
+         | SHIFT   |   7   |   8   |   9   |   %   |   =   |                         |   .   |   ´   |   `   |  LEFT |  DOWN |   RIGHT |
          '----------------------------------------------------------|       |----------------------------------------------------------'
                                    |  CTRL |  CMD  |     SPACE      |       |        |  LSFT |      ALTGR    |
                                    '--------------------------------'       '--------------------------------'*/
          label = "NUMBER";
          bindings = <
-         DE_0      DE_1   DE_2   DE_3    DE_SS     DE_PLUS                     XXX      XXX      DE_ADIA    DE_ODIA  XXX        DE_BSPC
-         DE_CAPS   DE_4   DE_5   DE_6    DE_MINS   DE_ASTR                     XXX      DE_GRV   XXX        DE_UDIA  DE_UP      DE_RET
-         DE_LSHFT  DE_7   DE_8   DE_9    DE_PERC   DE_QUES                     DE_DOT   XXX      XXX        DE_LEFT  DE_DOWN    DE_RIGHT
+         DE_0      DE_1   DE_2   DE_3    DE_MINS   DE_PLUS                     DE_SS    DE_UDIA  DE_ADIA    DE_ODIA  &ene_small DE_BSPC
+         DE_CAPS   DE_4   DE_5   DE_6    DE_SLSH   DE_ASTR                     DE_HASH  DE_TILD  DE_QUES    DE_AT    DE_UP      DE_RET
+         DE_LSHFT  DE_7   DE_8   DE_9    DE_PERC   DE_EQL                      DE_DOT   DE_ACUT  DE_GRV     DE_LEFT  DE_DOWN    DE_RIGHT
                                          DE_LCTRL  DE_LGUI    DE_SPACE   XXX   DE_LSHFT DE_RALT
             >;
       };
@@ -113,19 +113,19 @@ SPDX-License-Identifier: MIT
       // ### symbol_layer {{{
       symbol_layer {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |   ~   |       |       |   "   |       |BACKSPC  |
+         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |  `    |   '   |   ´   |   "   |       |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |       |       |       |  &    |  UP   |   ENTER |
+         |   %    |   {   |   }   |   ^   |PAGE_UP|   #   |                         |   \   |   |   |   /   |  &    |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |       |       |       |  LEFT |  DOWN |   RIGHT |
+         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |   ~   |   '   |       |  LEFT |  DOWN |   RIGHT |
          '---------------------------------------------------------|       |----------------------------------------------------------'
                                   |  CTRL    |  CMD       | SPACE  |       |  ENTER | ALTGR |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "SYMBOL";
          bindings = <
-         DE_DLR   DE_LPRN  DE_RPRN   DE_PLUS  DE_HASH    DE_AMPR                    DE_GRV   XXX       XXX      DE_LN_DQUO  XXX      DE_BSPC
-         DE_PERC  DE_LCBR  DE_RCBR   DE_ACUT  DE_PG_UP   XXX                        XXX      XXX       XXX      DE_AMPR     DE_UP    DE_RET
-         DE_LSHFT DE_LABK  DE_RABK   DE_HOME  DE_PG_DN   DE_END                     XXX      XXX       XXX      DE_LEFT     DE_DOWN  DE_RIGHT
+         DE_DLR   DE_LPRN  DE_RPRN   DE_LBRC  DE_RBRC    DE_AMPR                    DE_GRV   DE_QUOT   DE_ACUT  DE_LN_DQUO  XXX      DE_BSPC
+         DE_PERC  DE_LCBR  DE_RCBR   DE_CARET DE_PG_UP   DE_HASH                    DE_BSLS  DE_PIPE   DE_SLSH  DE_AMPR     DE_UP    DE_RET
+         DE_LSHFT DE_LABK  DE_RABK   DE_HOME  DE_PG_DN   DE_END                     DE_TILD  DE_QUOT   XXX      DE_LEFT     DE_DOWN  DE_RIGHT
                                               DE_LCTRL   DE_LGUI  DE_SPACE  DE_RET  SYMBOL_RGUI  FUNCTION_RALT
          >;
       };
@@ -133,9 +133,9 @@ SPDX-License-Identifier: MIT
       // ### function_layer {{{
       function_layer {
        /*.------------------------------------------------.                         .-------------------------------------------------.
-         |    F1  |  F2   |   F3  |   F4  |NEW_W_P|       |                         |DE_F13 | DE_F14|DE_F15 | DE_F16| BRI_DN| BRI_UP  |
+         |    F1  |  F2   |   F3  |   F4  | SPELL |TRADUCT|                         |DE_F13 | DE_F14|DE_F15 | DE_F16| BRI_DN| BRI_UP  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |    F5  |  F6   |   F7  |    F8 |       |       |                         |C-A-DEL|DE_F19 |DE_F20 |CLR_LIN|PAGE_UP|         |
+         |    F5  |  F6   |   F7  |    F8 |   \   |ALFRED |                         |C-A-DEL|DE_F19 |DE_F20 |CLR_LIN|PAGE_UP|         |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |    F9  |   F10 |   F11 |   F12 |ALFRED |EMOJI  |                         |L_SHIFT|L_SHIFT|R_SHIFT|  HOME |PAGE_DO|    END  |
          '----------------------------------------------------------|       |----------------------------------------------------------'
@@ -144,8 +144,8 @@ SPDX-License-Identifier: MIT
          LCTL(LGUI(KC_D)), LCTL(LGUI(KC_SPC))*/
          label = "FUNCTION";
          bindings = <
-         DE_F1  DE_F2   DE_F3   DE_F4    SPELL    XXX                       &macro6   &macro5   &macro8    &macro2   DE_BRI_DN  DE_BRI_UP
-         DE_F5  DE_F6   DE_F7   DE_F8    XXX      XXX                       TASKM     &macro1   &macro3    &macro4   DE_PG_UP   &macro9
+         DE_F1  DE_F2   DE_F3   DE_F4    SPELL    TRADUCT                   &macro6   &macro5   &macro8    &macro2   DE_BRI_DN  DE_BRI_UP
+         DE_F5  DE_F6   DE_F7   DE_F8    DE_BSLS  SNIPPET                   TASKM     &macro1   &macro3    &macro4   DE_PG_UP   &macro9
          DE_F9  DE_F10  DE_F11  DE_F12   CLIPBRD  EMOJI                     DE_LSHFT  DE_LSHFT  DE_RSHFT   DE_HOME   DE_PG_DN   DE_END
                                          DE_LCTRL DE_LGUI  DE_LALT  DE_TAB  DE_ACUT   DE_LCTRL
                               >;
@@ -154,19 +154,19 @@ SPDX-License-Identifier: MIT
       // ### media_layer {{{
       media_layer {
        /*.------------------------------------------------.                         .-------------------------------------------------.
-         |        |SC_FLOW|TXTSNIP|       |OP_TERM|       |                         |       |       |       |       | STOP  |  DELETE |
+         |        |SC_FLOW|TXTSNIP|SC_SHOT|OP_TERM|       |                         |POS1   |POS2   |LANG_1 |LANG_2 | STOP  |  DELETE |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |        |SC_SPSF|SC_RE  |       |       |       |                         |       |       |       |SHUFFLE|VOL_UP |PLAY/PAUS|
+         |bootlder|SC_SPSF|SC_RE  |       |       |       |                         |POS3   |POS4   |LANG_3 |SHUFFLE|VOL_UP |PLAY/PAUS|
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |        |       |       |       |       |       |                         |       |       |  MUTE |  PREV |VOL_DOW|  NEXT   |
+         |reset   |       |       |       |       |       |                         |       |       |  MUTE |  PREV |VOL_DOW|  NEXT   |
          '---------------------------------------------------------|       |----------------------------------------------------------'
                                   |  CTRL    |  CMD       |   ALT  |       |  SPACE | ALTGR |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "MEDIA";
          bindings = <
-         XXX          SC_FLOW  TXTSNIP  XXX     OP_TERM   XXX               XXX         XXX       XXX        XXX         DE_STOP    DE_DEL
-         XXX          SC_SPSF  SC_RE    XXX     XXX       XXX               XXX         XXX       XXX        DE_SHUFFLE  DE_VOL_UP  DE_PLAY
-         XXX          XXX      XXX      XXX     XXX       XXX               XXX         XXX       DE_MUTE    DE_PREV     DE_VOL_DN  DE_NEXT
+         XXX          SC_FLOW  TXTSNIP  SC_SHOT OP_TERM   XXX               POS1        POS2      DE_LANG1   DE_LANG2    DE_STOP    DE_DEL
+         &bootloader  SC_SPSF  SC_RE    XXX     XXX       XXX               POS3        POS4      DE_LANG3   DE_SHUFFLE  DE_VOL_UP  DE_PLAY
+         &sys_reset   XXX      XXX      XXX     XXX       XXX               &ene_small  &ene_big  DE_MUTE    DE_PREV     DE_VOL_DN  DE_NEXT
                                         DE_LCTRL  DE_LGUI  DE_LALT  DE_SPACE  DE_RALT DE_LCTRL
                               >;
                       };
@@ -174,39 +174,39 @@ SPDX-License-Identifier: MIT
       // ### mouse_layer: mouse {{{
       mouse_layer {
        /*.------------------------------------------------.                         .-------------------------------------------------.
-         |        |       |       |OUT_USB|OUT_BLE|OUT_TOG|                         |       |       |       |       |       |         |
+         |WH_LEFT |WH_RIGH|       |OUT_USB|OUT_BLE|OUT_TOG|                         | BRD-  | BRI+  |  SPD- | SPI+  |WH_DOWN| WH_UP   |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |        |CLICK_1|CLICK_2|CLICK_3|BT_PRV | BT_NXT|                         |       |       |       |CLICK_1| UP    |CLICK_2  |
+         |        |CLICK_1|CLICK_2|CLICK_3|BT_PRV | BT_NXT|                         | HUD-  | HUI+  |       |CLICK_1| UP    |CLICK_2  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |BT_CLR  |BT_0   |BT_1   |BT_2   |BT_3   |BT_4   |                         |       |       |       | LEFT  | DOWN  | RIGHT   |
+         |BT_CLR  |BT_0   |BT_1   |BT_2   |BT_3   |BT_4   |                         | SAD-  | SAI+  | RESET | LEFT  | DOWN  | RIGHT   |
          '---------------------------------------------------------|       |----------------------------------------------------------'
-                                  |EP_OFF  | EP_ON|         EP_TOG |       |       |        |               |
+                                  |EP_OFF  | EP_ON|         EP_TOG |       | EFF-  | EFR+   |   RGB_TOG     |
                                   '--------------------------------'       '--------------------------------'*/
          label = "MOUSE";
          bindings = <
-         XXX         XXX          XXX         &out OUT_USB &out OUT_BLE  &out OUT_TOG             XXX     XXX     XXX     XXX             XXX         XXX
-         XXX         CLICK_LEFT   CLICK_RIGHT CLICK_MIDDLE &bt BT_PRV    &bt BT_NXT               XXX     XXX     XXX     CLICK_LEFT      MOVE_UP     CLICK_RIGHT
-         &bt BT_CLR  &bt BT(0)    &bt BT(1)   &bt BT(2)    &bt BT(3)     &bt BT(4)                XXX     XXX     XXX     MOVE_LEFT       MOVE_DOWN   MOVE_RIGHT
-                                 &ext_power EP_OFF    &ext_power EP_ON   &ext_power EP_TOG    XXX    XXX    XXX
+         SCROLL_LEFT SCROLL_RIGHT XXX         &out OUT_USB &out OUT_BLE  &out OUT_TOG             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI SCROLL_DOWN SCROLL_UP
+         XXX         CLICK_LEFT   CLICK_RIGHT CLICK_MIDDLE &bt BT_PRV    &bt BT_NXT               &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_COLOR_HSB(0,0,100)     CLICK_LEFT      MOVE_UP     CLICK_RIGHT
+         &bt BT_CLR  &bt BT(0)    &bt BT(1)   &bt BT(2)    &bt BT(3)     &bt BT(4)                &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_COLOR_HSB(224,100,100) MOVE_LEFT       MOVE_DOWN   MOVE_RIGHT
+                                 &ext_power EP_OFF    &ext_power EP_ON   &ext_power EP_TOG    &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_TOG
                               >;
                       };
       // }}}
       // ### linux_symbol {{{
       linux_symbol {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |       |   ]   |   &   |                         |   ~   |   '   |       |       |       |BACKSPC  |
+         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |  `    |   '   |   ´   |bootldr| reset |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |       |       |       |   &   |  UP   |   ENTER |
+         |   %    |   {   |   }   |   ^   |PAGE_UP|   #   |                         |    \  |   |   |   /   |   &   |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |       |       |       |  LEFT |  DOWN |   RIGHT |
+         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |   ~   |   '   |   @   |  LEFT |  DOWN |   RIGHT |
          '---------------------------------------------------------|       |----------------------------------------------------------'
          DE_LN_DQUO               |DE_F13 |    DE_F14     | DE_F15 |       |  SPACE | ALTGR |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "LX_";
          bindings = <
-         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   XXX         DE_HASH     DE_LN_AMPS                DE_GRV      DE_LN_FSLH  XXX         XXX         XXX         DE_BSPC
-         DE_PERC  DE_LN_LCBR  DE_QUOT      DE_ACUT     DE_PG_UP    XXX                       XXX         XXX         XXX         DE_LN_AMPS  DE_UP       DE_RET
-         DE_LSHFT DE_LN_LABK  DE_LN_RABK   DE_HOME     DE_PG_DN    DE_END                    XXX         XXX         XXX         NAV_LEFT    DE_DOWN     NAV_RIGHT
+         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   DE_LN_LBRC  DE_LN_RBRC  DE_LN_AMPS                DE_GRV      DE_QUOT     DE_ACUT     &bootloader &sys_reset  DE_BSPC
+         DE_PERC  DE_LN_LCBR  DE_LN_RCBR   DE_LN_CARET DE_PG_UP    DE_HASH                   DE_LN_BSLH  DE_LN_PIPE  DE_LN_FSLH  DE_LN_AMPS  DE_UP       DE_RET
+         DE_LSHFT DE_LN_LABK  DE_LN_RABK   DE_HOME     DE_PG_DN    DE_END                    DE_LN_TILDE DE_QUOT     DE_LN_AT    NAV_LEFT    DE_DOWN     NAV_RIGHT
                                               &macro7   &macro5  &macro8  DE_SPACE  DE_RALT  DE_LCTRL
          >;
       };

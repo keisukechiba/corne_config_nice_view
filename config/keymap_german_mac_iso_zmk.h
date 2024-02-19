@@ -191,7 +191,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_M &kp M        // M
 #define DE_COMM &kp COMMA // ,
 #define DE_DOT &kp DOT    // .
-#define DE_MINS &kp SLASH // -
+#define DE_MINS &kp KP_MINUS // -
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐

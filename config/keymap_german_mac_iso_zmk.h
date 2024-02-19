@@ -251,7 +251,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_PILC &kp LA(N3)    // ¶
 #define DE_CENT &kp LA(N4)    // ¢
 #define DE_LBRC &kp LEFT_BRACKET    // [
-#define DE_RBRC &kp RIGHT_BRACKET    // ]
+#define DE_RBRC &kp BACKSLASH    // ]
 #define DE_PIPE &kp PIPE      // |
 #define DE_LCBR &kp LEFT_BRACE    // {
 #define DE_RCBR &kp PIPE      // }

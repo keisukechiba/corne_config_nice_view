@@ -351,14 +351,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_MDSH &kp LS(LA(MINUS)) // —
 
 // DE_LN_XXX for linux and windows
-#define DE_LN_LABK &kp NUBS // <
-#define DE_LN_RABK &kp LS(NUBS) // >
-#define DE_LN_LBRC &kp RA(N5) // [
-#define DE_LN_RBRC &kp RA(N6) // ]
+#define DE_LN_LABK &kp LESS_THAN // <
+#define DE_LN_RABK &kp GREATER_THAN // >
+#define DE_LN_LBRC &kp LEFT_BRACKET // [
+#define DE_LN_RBRC &kp RIGHT_BRACKET // ]
 #define DE_LN_LPRN &kp LS(N8) // (
 #define DE_LN_RPRN &kp LS(N9) // )
-#define DE_LN_LCBR &kp RA(N8) // {
-#define DE_LN_RCBR &kp RA(N9) // }
+#define DE_LN_LCBR &kp LEFT_BRACE // {
+#define DE_LN_RCBR &kp RIGHT_BRACE // }
 #define DE_LN_FSLH &kp LS(N7) // slash
 #define DE_LN_BSLH &kp LS(RA(N7)) // backslash
 #define DE_LN_PIPE &kp RA(NUBS) // pipe

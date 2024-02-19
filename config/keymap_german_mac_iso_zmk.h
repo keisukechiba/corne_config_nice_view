@@ -1,3 +1,4 @@
+
 /* ========================================
 FileName: keymap_german_mac_iso_zmk.h
 Date: 15:17 23.September.2022
@@ -165,7 +166,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_O &kp O       // O
 #define DE_P &kp P       // P
 #define DE_UDIA &kp LBKT // Ü
-#define DE_PLUS &kp RBKT // +
+#define DE_PLUS &kp KP_PLUS // +
 // Row 3
 #define DE_A &kp A            // A
 #define DE_S &kp S            // S

@@ -254,7 +254,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RBRC &kp RIGHT_BRACKET    // ]
 #define DE_PIPE &kp PIPE      // |
 #define DE_LCBR &kp LEFT_BRACE    // {
-#define DE_RCBR &kp RIGHT_BRACE    // }
+#define DE_RCBR &kp PIPE      // }
 #define DE_NEQL &kp LA(N0)    // ≠
 #define DE_IQUE &kp LA(MINUS)   // ¿
 // Row 2

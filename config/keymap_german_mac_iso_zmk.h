@@ -226,7 +226,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // Row 3
 #define DE_QUOT &kp SINGLE_QUOTE// '
 // Row 4
-#define DE_RABK &kp LS(GRAVE) // >
+#define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
 #define DE_UNDS &kp LS(SLASH) // _

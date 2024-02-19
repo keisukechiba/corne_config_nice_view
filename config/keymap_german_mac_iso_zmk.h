@@ -314,7 +314,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RDQU &kp LS(LA(N2))    // ”
 #define DE_PND  &kp LS(LA(N4))    // £
 #define DE_FI   &kp LS(LA(N5))    // ﬁ
-#define DE_BSLS &kp LS(LA(N7))    // (backslash)
+#define DE_BSLS &kp BACKSLASH     // (backslash)
 #define DE_STIL &kp LS(LA(N8))    // ˜
 #define DE_MDDT &kp LS(LA(N9))    // ·
 #define DE_MACR &kp LS(LA(N0))    // ¯

@@ -93,7 +93,7 @@ SPDX-License-Identifier: MIT
       // ### number_layer {{{
       number_layer {
        /*.-------------------------------------------------.                         .-------------------------------------------------.
-         |   0     |   1   |   2   |   3   |   -   |   +   |                         |   ß   |   Ü   |   Ä   |   Ö   |   Ñ   |BACKSPC  |
+         |   0     |   1   |   2   |   3   |   -   |   +   |                         |   ß   |       |   Ä   |   Ö   |   Ñ   |BACKSPC  |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |CAPS_LOCK|   4   |   5   |   6   |   /   |   *   |                         |   #   |   ~   |   ?   |   @   |  UP   |   ENTER |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
@@ -103,8 +103,8 @@ SPDX-License-Identifier: MIT
                                    '--------------------------------'       '--------------------------------'*/
          label = "NUMBER";
          bindings = <
-         DE_0      DE_1   DE_2   DE_3    DE_MINS   DE_PLUS                     DE_SS    DE_UDIA  DE_ADIA    DE_ODIA  &ene_small DE_BSPC
-         DE_CAPS   DE_4   DE_5   DE_6    DE_SLSH   DE_ASTR                     DE_HASH  DE_TILD  DE_QUES    DE_AT    DE_UP      DE_RET
+         DE_0      DE_1   DE_2   DE_3    DE_MINS   DE_PLUS                     DE_SS    XXX      DE_ADIA    DE_ODIA  &ene_small DE_BSPC
+         DE_CAPS   DE_4   DE_5   DE_6    DE_SLSH   DE_ASTR                     DE_HASH  DE_TILD  DE_QUES    DE_UDIA  DE_UP      DE_RET
          DE_LSHFT  DE_7   DE_8   DE_9    DE_PERC   DE_EQL                      DE_DOT   DE_ACUT  DE_GRV     DE_LEFT  DE_DOWN    DE_RIGHT
                                          DE_LCTRL  DE_LGUI    DE_SPACE   XXX   DE_LSHFT DE_RALT
             >;
@@ -113,19 +113,19 @@ SPDX-License-Identifier: MIT
       // ### symbol_layer {{{
       symbol_layer {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |  `    |   '   |   ´   |   "   |       |BACKSPC  |
+         |   $    |   (   |   )   |       |   ]   |   &   |                         |   ~   |       |       |   "   |       |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |   %    |   {   |   }   |   ^   |PAGE_UP|   #   |                         |   \   |   |   |   /   |  &    |  UP   |   ENTER |
+         |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |       |       |       |  &    |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |   ~   |   '   |       |  LEFT |  DOWN |   RIGHT |
+         |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |       |       |       |  LEFT |  DOWN |   RIGHT |
          '---------------------------------------------------------|       |----------------------------------------------------------'
                                   |  CTRL    |  CMD       | SPACE  |       |  ENTER | ALTGR |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "SYMBOL";
          bindings = <
-         DE_DLR   DE_LPRN  DE_RPRN   DE_LBRC  DE_RBRC    DE_AMPR                    DE_GRV   DE_QUOT   DE_ACUT  DE_LN_DQUO  XXX      DE_BSPC
-         DE_PERC  DE_LCBR  DE_RCBR   DE_CARET DE_PG_UP   DE_HASH                    DE_BSLS  DE_PIPE   DE_SLSH  DE_AMPR     DE_UP    DE_RET
-         DE_LSHFT DE_LABK  DE_RABK   DE_HOME  DE_PG_DN   DE_END                     DE_TILD  DE_QUOT   XXX      DE_LEFT     DE_DOWN  DE_RIGHT
+         DE_DLR   DE_LPRN  DE_RPRN   XXX      DE_HASH    DE_AMPR                    DE_GRV   XXX       XXX      DE_LN_DQUO  XXX      DE_BSPC
+         DE_PERC  DE_LCBR  DE_RCBR   DE_CARET DE_PG_UP   XXX                        XXX      XXX       XXX      DE_AMPR     DE_UP    DE_RET
+         DE_LSHFT DE_LABK  DE_RABK   DE_HOME  DE_PG_DN   DE_END                     XXX      XXX       XXX      DE_LEFT     DE_DOWN  DE_RIGHT
                                               DE_LCTRL   DE_LGUI  DE_SPACE  DE_RET  SYMBOL_RGUI  FUNCTION_RALT
          >;
       };
@@ -154,19 +154,19 @@ SPDX-License-Identifier: MIT
       // ### media_layer {{{
       media_layer {
        /*.------------------------------------------------.                         .-------------------------------------------------.
-         |        |SC_FLOW|TXTSNIP|       |OP_TERM|       |                         |POS1   |POS2   |       |       | STOP  |  DELETE |
+         |        |SC_FLOW|TXTSNIP|       |OP_TERM|       |                         |       |       |       |       | STOP  |  DELETE |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |bootlder|SC_SPSF|SC_RE  |       |       |       |                         |POS3   |POS4   |       |SHUFFLE|VOL_UP |PLAY/PAUS|
+         |        |SC_SPSF|SC_RE  |       |       |       |                         |       |       |       |SHUFFLE|VOL_UP |PLAY/PAUS|
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |reset   |       |       |       |       |       |                         |       |       |  MUTE |  PREV |VOL_DOW|  NEXT   |
+         |        |       |       |       |       |       |                         |       |       |  MUTE |  PREV |VOL_DOW|  NEXT   |
          '---------------------------------------------------------|       |----------------------------------------------------------'
                                   |  CTRL    |  CMD       |   ALT  |       |  SPACE | ALTGR |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "MEDIA";
          bindings = <
-         XXX          SC_FLOW  TXTSNIP  XXX     OP_TERM   XXX               POS1        POS2      XXX        XXX         DE_STOP    DE_DEL
-         &bootloader  SC_SPSF  SC_RE    XXX     XXX       XXX               POS3        POS4      XXX        DE_SHUFFLE  DE_VOL_UP  DE_PLAY
-         &sys_reset   XXX      XXX      XXX     XXX       XXX               &ene_small  &ene_big  DE_MUTE    DE_PREV     DE_VOL_DN  DE_NEXT
+         XXX          SC_FLOW  TXTSNIP  XXX     OP_TERM   XXX               XXX         XXX       XXX        XXX         DE_STOP    DE_DEL
+         XXX          SC_SPSF  SC_RE    XXX     XXX       XXX               XXX         XXX       XXX        DE_SHUFFLE  DE_VOL_UP  DE_PLAY
+         XXX          XXX      XXX      XXX     XXX       XXX               XXX         XXX       DE_MUTE    DE_PREV     DE_VOL_DN  DE_NEXT
                                         DE_LCTRL  DE_LGUI  DE_LALT  DE_SPACE  DE_RALT DE_LCTRL
                               >;
                       };
@@ -194,7 +194,7 @@ SPDX-License-Identifier: MIT
       // ### linux_symbol {{{
       linux_symbol {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |   ~   |   '   |       |bootldr| reset |BACKSPC  |
+         |   $    |   (   |   )   |       |   ]   |   &   |                         |   ~   |   '   |       |bootldr| reset |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |       |       |       |   &   |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
@@ -204,7 +204,7 @@ SPDX-License-Identifier: MIT
                                   '--------------------------------'       '--------------------------------'*/
          label = "LX_";
          bindings = <
-         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   DE_LN_LBRC  DE_HASH     DE_LN_AMPS                DE_GRV      DE_LN_FSLH  XXX         &bootloader &sys_reset  DE_BSPC
+         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   XXX         DE_HASH     DE_LN_AMPS                DE_GRV      DE_LN_FSLH  XXX         &bootloader &sys_reset  DE_BSPC
          DE_PERC  DE_LN_LCBR  DE_QUOT      DE_ACUT     DE_PG_UP    XXX                       XXX         XXX         XXX         DE_LN_AMPS  DE_UP       DE_RET
          DE_LSHFT DE_LN_LABK  DE_LN_RABK   DE_HOME     DE_PG_DN    DE_END                    XXX         XXX         XXX         NAV_LEFT    DE_DOWN     NAV_RIGHT
                                               &macro7   &macro5  &macro8  DE_SPACE  DE_RALT  DE_LCTRL

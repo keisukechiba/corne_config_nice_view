@@ -181,7 +181,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_ADIA &kp APOS      // Ä
 #define DE_HASH &kp HASH      // #
 // Row 4
-#define DE_LABK &kp GRAVE // <
+#define DE_LABK &kp LESS_THAN // <
 #define DE_Y &kp Z        // Y
 #define DE_X &kp X        // X
 #define DE_C &kp C        // C

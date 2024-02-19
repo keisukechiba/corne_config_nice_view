@@ -250,11 +250,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LDQU &kp LA(N2)    // “
 #define DE_PILC &kp LA(N3)    // ¶
 #define DE_CENT &kp LA(N4)    // ¢
-#define DE_LBRC &kp LA(N5)    // [
-#define DE_RBRC &kp LA(N6)    // ]
+#define DE_LBRC &kp LEFT_BRACKET    // [
+#define DE_RBRC &kp RIGHT_BRACKET    // ]
 #define DE_PIPE &kp PIPE      // |
-#define DE_LCBR &kp LA(N8)    // {
-#define DE_RCBR &kp LA(N9)    // }
+#define DE_LCBR &kp LEFT_BRACE    // {
+#define DE_RCBR &kp RIGHT_BRACE    // }
 #define DE_NEQL &kp LA(N0)    // ≠
 #define DE_IQUE &kp LA(MINUS)   // ¿
 // Row 2

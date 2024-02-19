@@ -174,27 +174,27 @@ SPDX-License-Identifier: MIT
       // ### mouse_layer: mouse {{{
       mouse_layer {
        /*.------------------------------------------------.                         .-------------------------------------------------.
-         |        |       |       |OUT_USB|OUT_BLE|OUT_TOG|                         | BRD-  | BRI+  |  SPD- | SPI+  |       |         |
+         |        |       |       |OUT_USB|OUT_BLE|OUT_TOG|                         |       |       |       |       |       |         |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |        |CLICK_1|CLICK_2|CLICK_3|BT_PRV | BT_NXT|                         | HUD-  | HUI+  |       |CLICK_1| UP    |CLICK_2  |
+         |        |CLICK_1|CLICK_2|CLICK_3|BT_PRV | BT_NXT|                         |       |       |       |CLICK_1| UP    |CLICK_2  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |BT_CLR  |BT_0   |BT_1   |BT_2   |BT_3   |BT_4   |                         | SAD-  | SAI+  | RESET | LEFT  | DOWN  | RIGHT   |
+         |BT_CLR  |BT_0   |BT_1   |BT_2   |BT_3   |BT_4   |                         |       |       |       | LEFT  | DOWN  | RIGHT   |
          '---------------------------------------------------------|       |----------------------------------------------------------'
-                                  |EP_OFF  | EP_ON|         EP_TOG |       | EFF-  | EFR+   |   RGB_TOG     |
+                                  |EP_OFF  | EP_ON|         EP_TOG |       |       |        |               |
                                   '--------------------------------'       '--------------------------------'*/
          label = "MOUSE";
          bindings = <
-         XXX         XXX          XXX         &out OUT_USB &out OUT_BLE  &out OUT_TOG             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &rgb_ug RGB_SPD                    &rgb_ug RGB_SPI XXX         XXX
-         XXX         CLICK_LEFT   CLICK_RIGHT CLICK_MIDDLE &bt BT_PRV    &bt BT_NXT               &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_COLOR_HSB(0,0,100)     CLICK_LEFT      MOVE_UP     CLICK_RIGHT
-         &bt BT_CLR  &bt BT(0)    &bt BT(1)   &bt BT(2)    &bt BT(3)     &bt BT(4)                &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_COLOR_HSB(224,100,100) MOVE_LEFT       MOVE_DOWN   MOVE_RIGHT
-                                 &ext_power EP_OFF    &ext_power EP_ON   &ext_power EP_TOG    &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_TOG
+         XXX         XXX          XXX         &out OUT_USB &out OUT_BLE  &out OUT_TOG             XXX     XXX     XXX     XXX             XXX         XXX
+         XXX         CLICK_LEFT   CLICK_RIGHT CLICK_MIDDLE &bt BT_PRV    &bt BT_NXT               XXX     XXX     XXX     CLICK_LEFT      MOVE_UP     CLICK_RIGHT
+         &bt BT_CLR  &bt BT(0)    &bt BT(1)   &bt BT(2)    &bt BT(3)     &bt BT(4)                XXX     XXX     XXX     MOVE_LEFT       MOVE_DOWN   MOVE_RIGHT
+                                 &ext_power EP_OFF    &ext_power EP_ON   &ext_power EP_TOG    XXX    XXX    XXX
                               >;
                       };
       // }}}
       // ### linux_symbol {{{
       linux_symbol {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |       |   ]   |   &   |                         |   ~   |   '   |       |bootldr| reset |BACKSPC  |
+         |   $    |   (   |   )   |       |   ]   |   &   |                         |   ~   |   '   |       |       |       |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |       |       |       |   &   |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
@@ -204,7 +204,7 @@ SPDX-License-Identifier: MIT
                                   '--------------------------------'       '--------------------------------'*/
          label = "LX_";
          bindings = <
-         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   XXX         DE_HASH     DE_LN_AMPS                DE_GRV      DE_LN_FSLH  XXX         &bootloader &sys_reset  DE_BSPC
+         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   XXX         DE_HASH     DE_LN_AMPS                DE_GRV      DE_LN_FSLH  XXX         XXX         XXX         DE_BSPC
          DE_PERC  DE_LN_LCBR  DE_QUOT      DE_ACUT     DE_PG_UP    XXX                       XXX         XXX         XXX         DE_LN_AMPS  DE_UP       DE_RET
          DE_LSHFT DE_LN_LABK  DE_LN_RABK   DE_HOME     DE_PG_DN    DE_END                    XXX         XXX         XXX         NAV_LEFT    DE_DOWN     NAV_RIGHT
                                               &macro7   &macro5  &macro8  DE_SPACE  DE_RALT  DE_LCTRL

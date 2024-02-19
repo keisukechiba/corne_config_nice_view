@@ -194,9 +194,9 @@ SPDX-License-Identifier: MIT
       // ### linux_symbol {{{
       linux_symbol {
        /*.------------------------------------------------.          TODO:          .-------------------------------------------------.
-         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |  `    |   '   |   ´   |bootldr| reset |BACKSPC  |
+         |   $    |   (   |   )   |   [   |   ]   |   &   |                         |  `    |       |       |bootldr| reset |BACKSPC  |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |   %    |   {   |   }   |   ^   |PAGE_UP|   #   |                         |    \  |   |   |   /   |   &   |  UP   |   ENTER |
+         |   %    |   {   |   }   |   ^   |PAGE_UP|       |                         |    \  |   |   |   /   |   &   |  UP   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |   ~   |   '   |   @   |  LEFT |  DOWN |   RIGHT |
          '---------------------------------------------------------|       |----------------------------------------------------------'
@@ -204,8 +204,8 @@ SPDX-License-Identifier: MIT
                                   '--------------------------------'       '--------------------------------'*/
          label = "LX_";
          bindings = <
-         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   DE_LN_LBRC  DE_HASH  DE_LN_AMPS                DE_GRV      DE_QUOT     DE_ACUT     &bootloader &sys_reset  DE_BSPC
-         DE_PERC  DE_LN_LCBR  DE_LN_RCBR   DE_LN_CARET DE_PG_UP    DE_HASH                   DE_LN_BSLH  DE_LN_PIPE  DE_LN_FSLH  DE_LN_AMPS  DE_UP       DE_RET
+         DE_DLR   DE_LN_LPRN  DE_LN_RPRN   DE_LN_LBRC  DE_HASH     DE_LN_AMPS                DE_GRV      XXX         XXX         &bootloader &sys_reset  DE_BSPC
+         DE_PERC  DE_LN_LCBR  DE_QUOT      DE_ACUT     DE_PG_UP    XXX                       DE_LN_BSLH  DE_LN_PIPE  DE_LN_FSLH  DE_LN_AMPS  DE_UP       DE_RET
          DE_LSHFT DE_LN_LABK  DE_LN_RABK   DE_HOME     DE_PG_DN    DE_END                    DE_LN_TILDE DE_QUOT     DE_LN_AT    NAV_LEFT    DE_DOWN     NAV_RIGHT
                                               &macro7   &macro5  &macro8  DE_SPACE  DE_RALT  DE_LCTRL
          >;

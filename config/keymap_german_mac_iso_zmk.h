@@ -252,7 +252,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_CENT &kp LA(N4)    // ¢
 #define DE_LBRC &kp LBKT    // [
 #define DE_RBRC &kp BACKSLASH    // ]
-#define DE_PIPE &kp PIPE      // |
+#define DE_PIPE &kp PIPE2    // |
 #define DE_LCBR &kp RIGHT_BRACE  // {
 #define DE_RCBR &kp PIPE      // }
 #define DE_NEQL &kp LA(N0)    // ≠

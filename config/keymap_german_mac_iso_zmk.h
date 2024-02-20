@@ -279,7 +279,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_FORD &kp LA(H)    // ª
 #define DE_MORD &kp LA(J)    // º
 #define DE_INCR &kp LA(K)    // ∆
-#define DE_AT   &kp AT_SIGN  // @
+#define DE_AT   &kp LEFT_BRACKET  // @
 #define DE_OE   &kp LA(SEMICOLON) // Œ
 #define DE_AE   &kp LA(APOS) // Æ
 #define DE_LSQU &kp LA(BSLH) // ‘

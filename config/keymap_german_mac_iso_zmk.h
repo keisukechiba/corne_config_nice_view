@@ -165,7 +165,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_I &kp I       // I
 #define DE_O &kp O       // O
 #define DE_P &kp P       // P
-#define DE_UDIA &kp LBKT // Ü
+#define DE_UDIA &kp NON_US_BSLH // Ü
 #define DE_PLUS &kp KP_PLUS // +
 // Row 3
 #define DE_A &kp A            // A
@@ -178,7 +178,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_K &kp K            // K
 #define DE_L &kp L            // L
 #define DE_ODIA &kp SEMICOLON // Ö
-#define DE_ADIA &kp APOS      // Ä
+#define DE_ADIA &kp RBRC      // Ä
 #define DE_HASH &kp HASH      // #
 // Row 4
 #define DE_LABK &kp LESS_THAN // <

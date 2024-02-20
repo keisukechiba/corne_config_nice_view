@@ -140,7 +140,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define DE_CARET &kp GRAVE // ^
+#define DE_CARET &kp EQUAL // ^
 #define DE_CIRC &kp GRAVE // ^ (dead)
 #define DE_1 &kp N1       // 1
 #define DE_2 &kp N2       // 2

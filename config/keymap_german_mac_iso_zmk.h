@@ -189,10 +189,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_DOT &kp DOT    // .
 #define DE_MINS &kp KP_MINUS // -
 
-#define DE_SS &kp MINUS       // ß
-#define DE_UDIA &kp NON_US_BSLH // Ü
-#define DE_ADIA &kp RBRC      // Ä
-#define DE_ODIA &kp SEMICOLON // Ö
+#define DE_SS &kp BSLH       // ß
+#define DE_UDIA &kp NON_US_BACKSLASH // Ü
+#define DE_ADIA &kp NUBS      // Ä
+#define DE_ODIA &kp EXCLAMATION // Ö
 
 
 
@@ -227,7 +227,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_ASTR &kp KP_MULTIPLY // *
 // #define DE_STAR &kp RBRC // "*" DE_ASTR
 // Row 3
-#define DE_QUOT &kp SINGLE_QUOTE// '
+#define DE_QUOT &kp LS(N7)// '
 // Row 4
 #define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;

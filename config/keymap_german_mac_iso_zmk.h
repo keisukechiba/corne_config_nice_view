@@ -191,7 +191,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define DE_SS &kp BSLH       // ß
 #define DE_UDIA &kp NON_US_BACKSLASH // Ü
-#define DE_ADIA &kp NUBS      // Ä
+#define DE_ADIA &kp INT_YEN    // Ä
 #define DE_ODIA &kp EXCLAMATION // Ö
 
 

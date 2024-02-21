@@ -253,7 +253,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LDQU &kp LA(N2)    // “
 #define DE_PILC &kp LA(N3)    // ¶
 #define DE_CENT &kp LA(N4)    // ¢
-#define DE_LBRC &kp LBKT    // [
+#define DE_LBRC &kp RIGHT_BRACKET  // [
 #define DE_RBRC &kp BACKSLASH    // ]
 #define DE_PIPE &kp LS(INT_YEN)    // |
 #define DE_LCBR &kp RIGHT_BRACE  // {
@@ -293,7 +293,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_CCCE &kp LA(C)    // Ç
 #define DE_SQRT &kp LA(V)    // √
 #define DE_INTG &kp LA(B)    // ∫
-#define DE_TILD &kp TILDE    // ~ 
+#define DE_TILD &kp LS(EQUAL)    // ~ 
 #define DE_MICR &kp LA(M)    // µ
 #define DE_INFN &kp LA(COMMA) // ∞
 #define DE_ELLP &kp LA(DOT)  // …

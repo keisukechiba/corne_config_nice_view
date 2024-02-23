@@ -170,15 +170,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_0 &kp N0       // 0
 #define DE_ACUT &kp EQUAL // ´ (dead)
 // Row 2
-#define DE_Q &gqt EXCLAMATION Q      // Q
-#define DE_W &gqt LS(N2) W           // W
-#define DE_E &gqt HASH E             // E
-#define DE_R &gqt LS(N4) R           // R
-#define DE_T &gqt LS(N5) T           // T
-#define DE_Z &gqt LS(N6) Y           // Z
-#define DE_U &kp U       // U
-#define DE_I &kp I       // I
-#define DE_O &kp O       // O
+#define DE_Q &gqt EXCLAMATION Q      // Q !
+#define DE_W &gqt LS(N2) W           // W "
+#define DE_E &gqt HASH E             // E #
+#define DE_R &gqt LS(N4) R           // R $
+#define DE_T &gqt LS(N5) T           // T %
+#define DE_Z &gqt LS(N6) Y           // Z &
+#define DE_U &gqt LS(N7) U           // U '
+#define DE_I &gqt LS(N8) I           // I (
+#define DE_O &gqt LS(N9) O           // O )
 #define DE_P &kp P       // P
 #define DE_PLUS &kp KP_PLUS // +
 // Row 3
@@ -189,8 +189,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_G &kp G            // G
 #define DE_H &kp H            // H
 #define DE_J &kp J            // J
-#define DE_K &kp K            // K
-#define DE_L &kp L            // L
+#define DE_K &gqt RIGHT_BRACKET K    // K [
+#define DE_L &gqt BACKSLASH L        // L ]
 #define DE_HASH &kp HASH      // #
 // Row 4
 #define DE_LABK &kp LESS_THAN // <

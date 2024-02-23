@@ -170,7 +170,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_0 &kp N0       // 0
 #define DE_ACUT &kp EQUAL // ´ (dead)
 // Row 2
-#define DE_Q &kp Q       // Q
+#define DE_Q &gpt &kp Q &kp EXCL       // Q
 #define DE_W &kp W       // W
 #define DE_E &kp E       // E
 #define DE_R &kp R       // R

@@ -170,12 +170,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_0 &kp N0       // 0
 #define DE_ACUT &kp EQUAL // ´ (dead)
 // Row 2
-#define DE_Q &gqt Q EXCLAMATION      // Q
-#define DE_W &kp W       // W
-#define DE_E &kp E       // E
-#define DE_R &kp R       // R
-#define DE_T &kp T       // T
-#define DE_Z &kp Y       // Z
+#define DE_Q &gqt EXCLAMATION Q      // Q
+#define DE_W &gqt LS(N2) W           // W
+#define DE_E &gqt HASH E             // E
+#define DE_R &gqt LS(N4) R           // R
+#define DE_T &gqt LS(N5) T           // T
+#define DE_Z &gqt LS(N6) Y           // Z
 #define DE_U &kp U       // U
 #define DE_I &kp I       // I
 #define DE_O &kp O       // O

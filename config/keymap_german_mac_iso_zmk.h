@@ -34,21 +34,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-/ {
-// ### behaviors {{{
-    behaviors {
-        gqt: global-quick-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-// }}}
+
 
 // #pragma once
 
@@ -170,7 +156,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_0 &kp N0       // 0
 #define DE_ACUT &kp EQUAL // ´ (dead)
 // Row 2
-#define DE_Q &gpt &kp Q &kp EXCL       // Q
+#define DE_Q &kp Q       // Q
 #define DE_W &kp W       // W
 #define DE_E &kp E       // E
 #define DE_R &kp R       // R
@@ -387,8 +373,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LN_CARET &kp RA(APOS) // ^
 #define DE_LN_DQUO &kp LS(N2) // "
 
-
-  };
 // ###############
 // #define DE_FSLH &kp AMPS  // "/" DE_SLSH
 // #define DE_STAR &kp RBRC  // "*" DE_ASTR

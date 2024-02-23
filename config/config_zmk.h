@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // combinadas para optimizar espacio
 #define MEDIA_ESC &lt MEDIA ESC
 #define MOUSE_TAB &lt MOUSE TAB
-#define NUMBER_SPACE &lt NUMBER SPACE
+#define NUMBER_SPACE &tog NUMBER
 #define SYMBOL_RGUI &mo SYMBOL     // &lt SYMBOL RGUI
 #define FUNCTION_RALT &mo FUNCTION // &lt FUNCTION RALT
 

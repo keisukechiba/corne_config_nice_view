@@ -49,7 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         };
     };
 // }}}
-
+};
 // #pragma once
 
 #define XXX &none
@@ -170,7 +170,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_0 &kp N0       // 0
 #define DE_ACUT &kp EQUAL // ´ (dead)
 // Row 2
-#define DE_Q &gpt Q EXCLAMATION      // Q
+#define DE_Q &gqt Q EXCLAMATION      // Q
 #define DE_W &kp W       // W
 #define DE_E &kp E       // E
 #define DE_R &kp R       // R
@@ -388,7 +388,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LN_DQUO &kp LS(N2) // "
 
 
-};
+
 // ###############
 // #define DE_FSLH &kp AMPS  // "/" DE_SLSH
 // #define DE_STAR &kp RBRC  // "*" DE_ASTR

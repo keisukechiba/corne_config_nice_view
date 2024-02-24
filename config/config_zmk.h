@@ -57,7 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NAV_DEL &mt LC(DEL) DEL // tap: del   | long-tap: delete word forward
 
 // combinadas para optimizar espacio
-#define MEDIA_ESC &lt MEDIA ESC
+#define MEDIA_ESC &lt ESC LA(LEFT_BRACE)
 #define MOUSE_TAB &lt MOUSE TAB
 #define NUMBER_SPACE &tog NUMBER
 #define SYMBOL_RGUI &mo SYMBOL     // &lt SYMBOL RGUI

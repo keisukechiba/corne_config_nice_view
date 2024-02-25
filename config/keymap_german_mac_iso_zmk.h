@@ -63,7 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     };
 };
 // #pragma once
-#define MEDI_ES &esc_or_alt LA(LBKT) ESC
+#define MEDI_ES &gqt LA(LBKT) ESC
 #define XXX &none
 #define ___ &trans
 

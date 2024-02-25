@@ -191,7 +191,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_U &gqt LS(N7) U           // U '
 #define DE_I &gqt LS(N8) I           // I (
 #define DE_O &gqt LS(N9) O           // O )
-#define DE_P &kp P       // P
+#define DE_P &gqt LBKT P             // P @
 #define DE_PLUS &kp KP_PLUS // +
 // Row 3
 #define DE_A &kp A            // A

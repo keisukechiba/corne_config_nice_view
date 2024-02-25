@@ -42,7 +42,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             label = "GLOBAL_QUICK_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             quick-tap-ms = <125>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -51,18 +51,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // }}}
 };
 
-/ {
-    behaviors {
-        esc_or_alt: esc_or_alt_at {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ESC_OR_ALT_AT";
-            #binding-cells = <2>;
-     　     hold-while-undecided;
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
-    };
-};
 // #pragma once
 #define MEDI_ES &gqt LA(LBKT) ESC
 #define XXX &none

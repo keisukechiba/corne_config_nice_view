@@ -50,6 +50,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     };
 // }}}
 };
+
+/ {
+    behaviors {
+        esc_or_alt: esc_or_alt_at {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ESC_OR_ALT_AT";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
 // #pragma once
 
 #define XXX &none

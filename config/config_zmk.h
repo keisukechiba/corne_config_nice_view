@@ -64,7 +64,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             #binding-cells = <2>;
             label = "ESC_OR_ALT_AT";
             tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&kp LA(LBKT)>;
+            bindings = <ESC>, <LA(LBKT)>;
         };
     };
 };

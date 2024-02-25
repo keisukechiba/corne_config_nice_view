@@ -45,7 +45,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             tapping-term-ms = <300>;
             quick-tap-ms = <125>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
+            tap-bindings = <&kp>; /* タップ時の動作 */
+            hold-bindings = <&kp>; /* 長押し時の動作もタップと同じにする */
         };
     };
 // }}}

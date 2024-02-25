@@ -44,7 +44,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
             quick-tap-ms = <125>;
-            hold-while-undecided = <true>;
             bindings = <&kp>, <&kp>;
         };
     };

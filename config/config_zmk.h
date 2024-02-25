@@ -57,17 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NAV_DEL &mt LC(DEL) DEL // tap: del   | long-tap: delete word forward
 
 // combinadas para optimizar espacio
-/ {
-    behaviors {
-        custom_esc_or_alt_at: esc_or_alt_at {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            label = "ESC_OR_ALT_AT";
-            tapping-term-ms = <200>;
-            bindings = <ESC>, <LA(LBKT)>;
-        };
-    };
-};
+
 
 #define MEDIA_ESC &mt LA(LBKT) ESC
 #define MOUSE_TAB &lt MOUSE TAB

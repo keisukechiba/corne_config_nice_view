@@ -57,6 +57,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             compatible = "zmk,behavior-hold-tap";
             label = "ESC_OR_ALT_AT";
             #binding-cells = <2>;
+     　     hold-while-undecided;
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
         };

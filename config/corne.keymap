@@ -76,18 +76,18 @@ SPDX-License-Identifier: MIT
       /*.------------------------------------------------.                         .-------------------------------------------------.
          |   ESC  |  Q/!  |  W/"  |  E/#  |  R/$  |  T/%  |                         |  Z/&  |  U/'  |  I/(  |  O/)  |  P/@  | BACKSPC |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |   TAB  |   A   |   S   |   D   |   F   |   G   |                         |   H   |   J   |  K/[  |  L/]  |   -   |   ENTER |
+         |   TAB  |   A   |   S   |   D   |   F   |   G   |                         |  H/;  |  J/:  |  K/[  |  L/]  |   -   |   ENTER |
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         |  SHIFT |   Y   |   X   |   C   |   V   |   B   |                         |   N   |   M   |   ,   |   .   |   X   |   Fn_N  |
+         |  SHIFT |   Y   |   X   |   C   |   V   |   B   |                         |   N   |   M   |  ,/<  |  ./>  |  _/?  |   Fn_N  |
          '---------------------------------------------------------|       |----------------------------------------------------------'
-                                  |  CTRL    |  GUI       |   ALT  |       |   MOUSE   |   SMBOL   |   FUNC   |
+                                  |  CTRL    |  GUI       |   ALT  |       |    SAPSE  |   SMBOL   |   FUNC   |
                                   '--------------------------------'       '----------------------------------'*/
          label = "Def";
          bindings = <
             MEDI_ES     DE_Q       DE_W   DE_E   DE_R      DE_T                            DE_Z        DE_U     DE_I         DE_O     DE_P     DE_BSPC
             MOUSE_TAB   DE_A       DE_S   DE_D   DE_F      DE_G                            DE_H        DE_J     DE_K         DE_L     DE_MINS  DE_RET
-            DE_LSHFT    DE_Y       DE_X   DE_C   DE_V      DE_B                            DE_N        DE_M     LSHFT_COMMA  DE_DOT   XXX      NUMBER_SPACE
-                                                   DE_LCTRL  DE_LGUI  DE_RALT        MOUSE_TAB  SYMBOL_RGUI  FUNCTION_RALT
+            DE_LSHFT    DE_Y       DE_X   DE_C   DE_V      DE_B                            DE_N        DE_M     LSHFT_COMMA  DE_DOT   DE_UNDS  NUMBER_SPACE
+                                                   DE_LCTRL  DE_LGUI  DE_RALT        DE_SPACE  SYMBOL_RGUI  FUNCTION_RALT
             >;
       };
       // }}}
@@ -98,7 +98,7 @@ SPDX-License-Identifier: MIT
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |         |       |  F5   |  F6   |   F7  |   F8  |                         |   4   |   5   |   6   |   +   |   *   |   ENTER |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         | SHIFT   |       |  F1   |  F2   |   F3  |   F4  |                         |   1   |   2   |   3   |       |       |  NUMBER |
+         | SHIFT   |       |  F1   |  F2   |   F3  |   F4  |                         |   1   |   2   |   3   |       |       |    Fn_N |
          '----------------------------------------------------------|       |----------------------------------------------------------'
                                    |  CTRL |  GUI  |       ALT      |       |    0   |   .   |     BACKSPC   |
                                    '--------------------------------'       '--------------------------------'*/

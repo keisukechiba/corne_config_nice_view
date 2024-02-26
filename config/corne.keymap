@@ -57,25 +57,6 @@ SPDX-License-Identifier: MIT
       };
    };
 // }}}
-
-// 全角ハイフンを出力するマクロの定義
-/ {
-    behaviors {
-        zenkaku_hyphen_macro: behavior_zenkaku_hyphen {
-            compatible = "zmk,behavior-macro";
-            label = "ZENKAKU_HYPHEN";
-            #binding-cells = <0>; // このビヘイビアは追加のパラメータを取りません
-            tap-ms = <50>; // キーのタップ時間（ミリ秒）
-            wait-ms = <10>; // キータップ間の待機時間（ミリ秒）
-            // 以下のbindingsセクションで、全角モードへの切り替え、ハイフンキーのタップ、元の入力モードへの復帰をエミュレート
-            bindings = <
-                &kp LANG2 // 全角モードへ切り替え（LANG2は例です。実際のキーコードに置き換えてください）
-                &kp MINUS // ハイフンキーをタップ
-                &kp LANG1 // 元の入力モードへ復帰（LANG1は例です。実際のキーコードに置き換えてください）
-            >;
-        };
-    };
-};
    // ### conditional_layers {{{
    conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -104,7 +85,7 @@ SPDX-License-Identifier: MIT
          label = "Def";
          bindings = <
             MEDI_ES     DE_Q       DE_W   DE_E   DE_R      DE_T                            DE_Z        DE_U     DE_I         DE_O     DE_P     DE_BSPC
-            MOUSE_TAB   DE_A       DE_S   DE_D   DE_F      DE_G                            DE_H        DE_J     DE_K         DE_L     &zenkaku_hyphen_macro DE_RET
+            MOUSE_TAB   DE_A       DE_S   DE_D   DE_F      DE_G                            DE_H        DE_J     DE_K         DE_L     XXX      DE_RET
             DE_LSHFT    DE_Y       DE_X   DE_C   DE_V      DE_B                            DE_N        DE_M     LSHFT_COMMA  DE_DOT   DE_UNDS  NUMBER_SPACE
                                                    DE_LCTRL  DE_LGUI  DE_RALT        DE_SPACE  SYMBOL_RGUI  FUNCTION_RALT
             >;

@@ -75,7 +75,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // SPACE CAPS TAB ENTER BACKSPACE ESCAPE DELETE
 #define DE_SPACE &kp SPACE // Space
 #define DE_CAPS &kp CAPS   // Caps Lock
-#define DE_BSPC &kp BSPC   // Backspace
+#define DE_BSPC &gqt DEL BSPC   // Backspace DELETE
 #define DE_RET &kp RET     // Enter
 #define DE_TAB &kp TAB     // Tab
 #define DE_DEL &kp DEL     // Delete

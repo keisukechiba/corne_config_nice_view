@@ -202,8 +202,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_B &kp B        // B
 #define DE_N &kp N        // N
 #define DE_M &kp M        // M
-#define DE_COMM &kp COMMA // ,
-#define DE_DOT &kp DOT    // .
+#define DE_COMM &gqt LESS_THAN COMMA    // ,/<
+#define DE_DOT &gqt GREATER_THAN DOT    // ./>
 #define DE_MINS &kp KP_MINUS // -
 
 #define DE_SS &kp NUHS       // ß
@@ -249,7 +249,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
-#define DE_UNDS &kp LS(SLASH) // _
+#define DE_UNDS &gqt QUESTION LS(SLASH) // _?
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐

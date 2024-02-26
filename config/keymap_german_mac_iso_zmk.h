@@ -204,7 +204,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_M &kp M        // M
 #define DE_COMM &gqt LESS_THAN COMMA    // ,/<
 #define DE_DOT &gqt GREATER_THAN DOT    // ./>
-#define DE_MINS &kp KP_MINUS // -
+#define DE_MINS &kp MINUS // -
 
 #define DE_SS &kp NUHS       // ß
 #define DE_UDIA &kp NON_US_BACKSLASH // Ü

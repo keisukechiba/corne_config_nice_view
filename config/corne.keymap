@@ -80,7 +80,7 @@ SPDX-License-Identifier: MIT
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |  SHIFT |   Y   |   X   |   C   |   V   |   B   |                         |   N   |   M   |  ,/<  |  ./>  |  _/?  |   Fn_N  |
          '---------------------------------------------------------|       |----------------------------------------------------------'
-                                  |  CTRL    |  GUI       |   ALT  |       |    SAPSE  |   SMBOL   |   FUNC   |
+                                  |  CTRL    |  GUI       |   ALT  |       |    SAPSE  |   SYMBOL   |   FUNC   |
                                   '--------------------------------'       '----------------------------------'*/
          label = "Def";
          bindings = <
@@ -120,7 +120,7 @@ SPDX-License-Identifier: MIT
          |--------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |SHIFT   |    <  |   >   |  HOME |PAGE_DO|  END  |                         |   ~   |   '   |       |  LEFT |  DOWN |   RIGHT |
          '---------------------------------------------------------|       |----------------------------------------------------------'
-                                  |  CTRL    |  GUI       | ALT  |       |  ENTER | SMBOL |          CTRL |
+                                  |  CTRL    |  GUI       |   ALT  |       |  ENTER | SMBOL |          CTRL |
                                   '--------------------------------'       '--------------------------------'*/
          label = "SYMBOL";
          bindings = <
@@ -166,7 +166,7 @@ SPDX-License-Identifier: MIT
          label = "MEDIA";
          bindings = <
          XXX          XXX      XXX      XXX     XXX       XXX               XXX        XXX       XXX        XXX         XXX        XXX    
-         XXX          XXX      XXX      XXX     XXX       XXX               XXX        XXX       XXX        XXX         XXX        XXX    
+         DE_MINS      DE_NDSH  DE_MDSH  XXX     XXX       XXX               XXX        XXX       XXX        XXX         XXX        XXX    
          XXX          XXX      XXX      XXX     XXX       XXX               XXX        XXX       XXX        XXX         XXX        XXX    
                                         DE_LCTRL  DE_LGUI  DE_LALT  DE_SPACE  DE_RALT DE_LCTRL
                               >;

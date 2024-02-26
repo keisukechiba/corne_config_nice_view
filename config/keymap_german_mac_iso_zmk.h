@@ -388,7 +388,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LN_CARET &kp RA(APOS) // ^
 #define DE_LN_DQUO &kp LS(N2) // "
 
-
+#define &kp DE_ESC //ESC
 
 // ###############
 // #define DE_FSLH &kp AMPS  // "/" DE_SLSH

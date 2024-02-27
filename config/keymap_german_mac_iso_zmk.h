@@ -49,43 +49,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     };
 // }}}
 };
-/* Copied (modified) from https://github.com/caksoylar/zmk-config */
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
-  combo_##NAME { \
-    timeout-ms = <TERM>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
-    global-quick-tap-ms = <QUICKTAP>; \
-  };
-
-/ {
-  combos {
-    compatible = "zmk,combos";
-    /*
-      KEY POSITIONS
-      ╭────────────────────────╮  ╭────────────────────────╮
-      │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
-      │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
-      │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
-      ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
-                  ╰────────────╯  ╰────────────╯
-    */
-
-    /* Layers */
-    // COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-
-    /* Symbols */
-    // Left
-    COMBO(Paste, &kp LG(V), 15 16, Def, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    // Right
-
-    /* Bluetooth */
-
-    /* Media */
-
-  };
-};
 // #pragma once
 #define MEDI_ES &gqt LA(LBKT) ESC
 #define XXX &none

@@ -62,11 +62,6 @@ SPDX-License-Identifier: MIT
             key-positions = <14 15>;
         };
 
-        Paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <15 16>;
-        };
-
         Cut {
             bindings = <&kp LG(X)>;
             key-positions = <13 14>;

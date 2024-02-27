@@ -55,12 +55,12 @@ combos {
     
     COMBO(unlock, <&to DEFAULT>, <LT5 LH0 RH0 RT5>, <LOCK>)
     COMBO(lock, <&to LOCK>, <LT5 RH0>, <LX_>)
-    COMBO(Copy, <&kp LG(C)>, <14 15>, <>)
-    COMBO(Cut, <&kp LG(X)>, <13 14>, <>)
-    COMBO(CO_UP, <&kp UP>, <9 21>, <>)
-    COMBO(CO_LEFT, <&kp LEFT>, <20 21>, <>)
-    COMBO(CO_DOWN, <&kp DOWN>, <21 33>, <>)
-    COMBO(CO_RIGHT, <&kp RIGHT>, <21 22>, <>)
+    COMBO(Copy, <&kp LG(C)>, <14 15>, <Def>)
+    COMBO(Cut, <&kp LG(X)>, <13 14>, <Def>)
+    COMBO(CO_UP, <&kp UP>, <9 21>, <Def>)
+    COMBO(CO_LEFT, <&kp LEFT>, <20 21>, <Def>)
+    COMBO(CO_DOWN, <&kp DOWN>, <21 33>, <Def>)
+    COMBO(CO_RIGHT, <&kp RIGHT>, <21 22>, <Def>)
 };
 // }}}
 

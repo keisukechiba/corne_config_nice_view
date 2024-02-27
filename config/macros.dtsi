@@ -79,7 +79,8 @@ MACRO(ene_big, DE_TILD &kp LS(N))
     global-quick-tap-ms = <QUICKTAP>; \
   };
 
-// ### combos {{{
+/ {
+  combos {
     compatible = "zmk,combos";
 /*                                      42 KEY MATRIX / LAYOUT MAPPING
 
@@ -103,5 +104,6 @@ MACRO(ene_big, DE_TILD &kp LS(N))
 
     /* Media */
 
-// }}}
+  };
+};
 // vim: filetype=dts fdm=marker:

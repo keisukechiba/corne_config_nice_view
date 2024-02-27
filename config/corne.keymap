@@ -43,28 +43,16 @@ SPDX-License-Identifier: MIT
    };
 // }}}
 
-// コンボ定義のためのマクロ
-   #define COMBO(name, keys, positions, layer) \
-   name: name##_combo { \
-       bindings = keys; \
-       key-positions = positions; \
-       layers = layer; \
-   };
-
 // ### combos {{{
 combos {
     compatible = "zmk,combos";
-
-    // unlockコンボ
-    COMBO(unlock, <&to DEFAULT>, <LT5 LH0 RH0 RT5>, <LOCK>)
-    // lockコンボ
-    COMBO(lock, <&to LOCK>, <LT5 RH0>, <LX_>)
-    // Copyコンボ
-    COMBO(Copy, <&kp LG(C)>, <14 15>, <>)
-    // Cutコンボ
-    COMBO(Cut, <&kp LG(X)>, <13 14>, <>)
-   };
+    unlock { bindings = <&to DEFAULT>; key-positions = <LT5 LH0 RH0 RT5>; layers = <LOCK>; };
+    lock { bindings = <&to LOCK>; key-positions = <LT5 RH0>; layers = <LX_>; };
+    Copy { bindings = <&kp LG(C)>; key-positions = <14 15>; };
+    Cut { bindings = <&kp LG(X)>; key-positions = <13 14>; };
+};
 // }}}
+
 
    // ### conditional_layers {{{
    conditional_layers {

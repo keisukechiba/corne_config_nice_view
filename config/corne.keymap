@@ -44,12 +44,12 @@ SPDX-License-Identifier: MIT
 // }}}
 
 // コンボ定義のためのマクロ
-#define COMBO(name, keys, positions, layer) \
-name: name##_combo { \
-    bindings = keys; \
-    key-positions = positions; \
-    layers = layer; \
-};
+   #define COMBO(name, keys, positions, layer) \
+   name: name##_combo { \
+       bindings = keys; \
+       key-positions = positions; \
+       layers = layer; \
+   };
 
 // ### combos {{{
 combos {
@@ -63,7 +63,7 @@ combos {
     COMBO(Copy, <&kp LG(C)>, <14 15>, <>)
     // Cutコンボ
     COMBO(Cut, <&kp LG(X)>, <13 14>, <>)
-};
+   };
 // }}}
 
    // ### conditional_layers {{{

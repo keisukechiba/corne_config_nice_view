@@ -46,6 +46,7 @@ SPDX-License-Identifier: MIT
 combos {
     compatible = "zmk,combos";
     unlock { bindings = <&to DEFAULT>; key-positions = <LT5 LH0 RH0 RT5>; layers = <LOCK>; };
+    CO_symbol { bindings = <&tog SYMBOL>; key-positions = <21 23>; };
     lock { bindings = <&to LOCK>; key-positions = <LT5 RH0>; layers = <LX_>; };
     Copy { bindings = <&kp LG(C)>; key-positions = <14 15>; };
     Cut { bindings = <&kp LG(X)>; key-positions = <13 14>; };

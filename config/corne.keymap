@@ -46,10 +46,10 @@ SPDX-License-Identifier: MIT
 combos {
     compatible = "zmk,combos";
     unlock { bindings = <&to DEFAULT>; key-positions = <LT5 LH0 RH0 RT5>; layers = <LOCK>; };
-    CO_symbol { bindings = <&to SYMBOL>; key-positions = <21 23>; layers = <DEFAULT NUMBER>; };
-    CO_FnN { bindings = <&to NUMBER>; key-positions = <9 11>; };
-    CO_Def { bindings = <&to DEFAULT>; key-positions = <33 35>; };
     lock { bindings = <&to LOCK>; key-positions = <LT5 RH0>; layers = <LX_>; };
+    CO_symbol { bindings = <&to SYMBOL>; key-positions = <21 23>; layers = <DEFAULT NUMBER>; };
+    CO_FnN { bindings = <&to NUMBER>; key-positions = <9 11>; layers = <DEFAULT SYMBOL>; };
+    CO_Def { bindings = <&to DEFAULT>; key-positions = <33 35>; layers = <SYMBOL NUMBER>; };
 
     CO_AT { bindings = <&kp LBKT>; key-positions = <39 40 41>; };
 
@@ -65,7 +65,10 @@ combos {
 };
 // }}}
 
-
+// mods deactivate caps-word, requires PR https://github.com/zmkfirmware/zmk/pull/1451
+// &caps_word {
+//   /delete-property/ ignore-modifiers;
+// };
 
 
 // }}}

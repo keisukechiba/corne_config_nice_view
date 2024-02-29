@@ -50,13 +50,18 @@ combos {
     CO_FnN { bindings = <&to NUMBER>; key-positions = <9 11>; };
     CO_Def { bindings = <&to DEFAULT>; key-positions = <33 35>; };
     lock { bindings = <&to LOCK>; key-positions = <LT5 RH0>; layers = <LX_>; };
+
     CO_AT { bindings = <&kp LBKT>; key-positions = <39 40 41>; };
 
-    // 追加された要素
     CO_UP { bindings = <&kp UP>; key-positions = <9 21>; };
     CO_LEFT { bindings = <&kp LEFT>; key-positions = <20 21>; };
     CO_DOWN { bindings = <&kp DOWN>; key-positions = <21 33>; };
     CO_RIGHT { bindings = <&kp RIGHT>; key-positions = <21 22>; };
+
+    CO_PAGEUP { bindings = <&kp PG_UP>; key-positions = <10 22>; };
+    CO_PAGEDOWN { bindings = <&kp PG_DN>; key-positions = <22 34>; };
+    CO_HOME { bindings = <&kp HOME>; key-positions = <8 20>; };
+    CO_END { bindings = <&kp END>; key-positions = <20 32>; };
 };
 // }}}
 

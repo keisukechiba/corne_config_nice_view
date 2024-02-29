@@ -247,7 +247,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
-#define DE_UNDS &gqt QUESTION LS(SLASH) // _?
+#define DE_UNDS &gqt QUESTION UNDER // _ ?
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -385,7 +385,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LN_TILDE &kp LS(RA(N8)) // ~
 #define DE_LN_CARET &kp RA(APOS) // ^
 #define DE_LN_DQUO &kp LS(N2) // "
-
+#difine DE_JP_EN &kp LA(LBKT) //全角半角切替
 #define DE_ESC &kp ESC //ESC
 
 // ###############

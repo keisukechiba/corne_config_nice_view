@@ -385,7 +385,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_LN_TILDE &kp LS(RA(N8)) // ~
 #define DE_LN_CARET &kp RA(APOS) // ^
 #define DE_LN_DQUO &kp LS(N2) // "
-#difine DE_JP_EN &kp LA(LBKT) //全角半角切替
+#difine DE_JPCONFIG &kp LA(LBKT) //JPCONFIG
 #define DE_ESC &kp ESC //ESC
 
 // ###############

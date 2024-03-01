@@ -110,16 +110,16 @@ combos {
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
          |         |       |  F5   |  F6   |   F7  |   F8  |                         |   4   |   5   |   6   |   +   |   *   |   ENTER |
          |---------+-------+-------+-------+-------+-------|                         |-------+-------+-------+-------+-------+---------|
-         | SHIFT   |       |  F1   |  F2   |   F3  |   F4  |                         |   1   |   2   |   3   |       |       |    Fn_N |
+         | SHIFT   |       |  F1   |  F2   |   F3  |   F4  |                         |   1   |   2   |   3   |       |       |   SHIFT |
          '----------------------------------------------------------|       |----------------------------------------------------------'
-                                   |  CTRL |  GUI  |       ALT      |       |    0   |   .   |     BACKSPC   |
+                                   |  CTRL |  GUI  |       ALT      |       |    0   |   .   |       SPACE   |
                                    '--------------------------------'       '--------------------------------'*/
          label = "Fn-N";
          bindings = <
          XXX       XXX    DE_F9  DE_F10  DE_F11  DE_F12                       DE_7   DE_8   DE_9    DE_MINS  DE_SLSH    DE_BSPC
          XXX       XXX    DE_F5  DE_F6   DE_F7   DE_F8                        DE_4   DE_5   DE_6    DE_PLUS  DE_ASTR    DE_RET
-         DE_LSHFT  XXX    DE_F1  DE_F2   DE_F3   DE_F4                        DE_1   DE_2   DE_3    XXX      XXX        NUMBER_SPACE     
-                                         DE_LCTRL  DE_LGUI    DE_RALT    DE_0  DE_DOT   DE_BSPC
+         DE_LSHFT  XXX    DE_F1  DE_F2   DE_F3   DE_F4                        DE_1   DE_2   DE_3    XXX      XXX        DE_RSHFT     
+                                         DE_LCTRL  DE_LGUI    DE_RALT    DE_0  DE_DOT   DE_SPACE
             >;
       };
       // }}}

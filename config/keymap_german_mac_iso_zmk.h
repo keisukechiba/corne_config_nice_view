@@ -230,9 +230,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         alt_9_5: alt_9_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N9 &kp KP_N5>
+                , <&macro_tap &kp N9 &kp N5>
                 , <&macro_release &kp LALT>
                 ;
         };

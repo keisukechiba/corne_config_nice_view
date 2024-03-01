@@ -225,25 +225,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-/ {
-    macros {
-        alt_9_5: alt_9_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp N9 &kp N5>
-                , <&macro_release &kp LALT>
-                ;
-        };
-    };
-};
-
-
-
-
 #define DE_DEG  &kp LS(GRAVE) // °
 #define DE_EXCL &kp LS(N1)    // !
 #define DE_DQUO &kp LS(N2)    // "
@@ -266,7 +247,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
-#define DE_UNDS &gqt QMARK alt_9_5 // _ ?
+#define DE_UNDS &gqt QMARK LS(INT_YEN) // _ ?
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐

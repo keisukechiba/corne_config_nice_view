@@ -232,7 +232,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LALT>
-                , <&macro_tap &kp NINE &kp FIVE>
+                , <&macro_tap &kp KP_N9 &kp KP_N5>
                 , <&macro_release &kp LALT>
                 ;
         };

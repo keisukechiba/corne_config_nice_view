@@ -247,7 +247,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_RABK &kp GREATER_THAN // >
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
-#define DE_UNDS &gqt QMARK SINGLE_QUOTE // _ ?
+ZMK_UNICODE_SINGLE(UNI_UNDS, N0, N0, N5, F)
+#define DE_UNDS &gqt QMARK UNI_UNDS // _ ?
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐

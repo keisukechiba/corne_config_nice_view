@@ -248,7 +248,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_SCLN &kp LS(COMMA) // ;
 #define DE_COLN &kp LS(DOT)  // :
 
-#define DE_UNDS &gqt QMARK LS(JP_BSLH) // _ ?
+#define DE_UNDS &gqt QMARK LS(BSLH) // _ ?
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐

@@ -186,8 +186,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_D &kp D            // D
 #define DE_F &kp F            // F
 #define DE_G &kp G            // G
-#define DE_H &kp H            // H
-#define DE_J &kp J            // J
+#define DE_H &gqt SEMICOLON H        // H ;
+#define DE_J &gqt SINGLE_QUOTE J     // J :
 #define DE_K &gqt RIGHT_BRACKET K    // K [
 #define DE_L &gqt BACKSLASH L        // L ]
 #define DE_HASH &kp HASH      // #
@@ -200,9 +200,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DE_B &kp B        // B
 #define DE_N &kp N        // N
 #define DE_M &kp M        // M
-#define DE_COMM &gqt LESS_THAN COMMA    // ,/<
-#define DE_DOT &gqt GREATER_THAN DOT    // ./>
-#define DE_MINS &kp MINUS // -
+#define DE_COMM &gqt LESS_THAN COMMA    // , <
+#define DE_DOT &gqt GREATER_THAN DOT    // . >
+#define DE_MINS &gqt LS(N0) MINUS       // - =
 
 #define DE_SS &kp NUHS       // ß
 #define DE_UDIA &kp NON_US_BACKSLASH // Ü

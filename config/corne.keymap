@@ -16,6 +16,7 @@ Brief: keymap for the wireless corne keyboard
 Copyright (c) 2020 The ZMK Contributors
 SPDX-License-Identifier: MIT
 ========================================= */
+#define HOST_OS 2
 // ### include {{{
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>

@@ -58,11 +58,11 @@ combos {
     compatible = "zmk,combos";
     unlock { bindings = <&to DEFAULT>; key-positions = <LT5 LH0 RH0 RT5>; layers = <LOCK>; };
     lock { bindings = <&to LOCK>; key-positions = <LT5 RH0>; layers = <LX_>; };
-    CO_symbol { bindings = <&to SYMBOL>; key-positions = <21 23>; layers = <DEFAULT NUMBER>; };
-    CO_FnN { bindings = <&to NUMBER>; key-positions = <9 11>; layers = <DEFAULT SYMBOL>; };
-    MO_FnN { bindings = <&mo NUMBER>; key-positions = <0 2>; layers = <DEFAULT SYMBOL>; };
-    CO_Def { bindings = <&to DEFAULT>; key-positions = <33 35>; layers = <SYMBOL NUMBER>; };
-    CO_Mou { bindings = <&tog MOUSE>; key-positions = <6 8>; layers = <DEFAULT SYMBOL>; };
+    CO_symbol { bindings = <&to SYMBOL>; key-positions = <21 23>; layers = <DEFAULT NUMBER MOUSE; };
+    CO_FnN { bindings = <&to NUMBER>; key-positions = <9 11>; layers = <DEFAULT SYMBO MOUSEL>; };
+    MO_FnN { bindings = <&mo NUMBER>; key-positions = <0 2>; layers = <DEFAULT SYMBOL MOUSE>; };
+    CO_Def { bindings = <&to DEFAULT>; key-positions = <33 35>; layers = <SYMBOL NUMBER MOUSE>; };
+    CO_Mou { bindings = <&tog MOUSE>; key-positions = <6 8>; layers = <DEFAULT SYMBOL MOUSE>; };
     CO_AT { bindings = <&kp LBKT>; key-positions = <39 40 41>; };
 
     CO_UP { bindings = <&kp UP>; key-positions = <9 21>; };

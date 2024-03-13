@@ -75,6 +75,8 @@ combos {
     CO_HOME { bindings = <&kp HOME>; key-positions = <8 20>; };
     CO_END { bindings = <&kp END>; key-positions = <20 32>; };
 
+    CO_PreScr { bindings = <&kp PRINTSCREEN>; key-positions = <36 37 38>; };
+
     CO_F11 { bindings = <&kp F11>; key-positions = <4 5>; };
     CO_F10 { bindings = <&kp F10>; key-positions = <3 4>; };
     CO_F9 { bindings = <&kp F9>; key-positions = <2 3>; };
@@ -82,6 +84,9 @@ combos {
     CO_F7 { bindings = <&kp F7>; key-positions = <16 17>; };
     CO_F6 { bindings = <&kp F6>; key-positions = <15 16>; };
     CO_F5 { bindings = <&kp F5>; key-positions = <14 15>; };
+    CO_F4 { bindings = <&kp F4>; key-positions = <13 14>; };
+    CO_F2 { bindings = <&kp F2>; key-positions = <27 28>; };
+
 
 };
 // }}}

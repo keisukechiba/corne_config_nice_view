@@ -50,7 +50,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // }}}
 };
 // #pragma once
-#define MEDI_ES &gqt LA(LBKT) ESC
+#define MEDI_ES &kp ESC
 #define XXX &none
 #define ___ &trans
 

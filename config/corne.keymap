@@ -61,7 +61,7 @@ combos {
     CO_symbol { bindings = <&to SYMBOL>; key-positions = <22 23>; layers = <DEFAULT NUMBER MOUSE>; };
     CO_FnN { bindings = <&to NUMBER>; key-positions = <10 11>; layers = <DEFAULT SYMBOL MOUSE>; };
     MO_FnN { bindings = <&mo NUMBER>; key-positions = <0 1>; layers = <DEFAULT SYMBOL MOUSE>; };
-    MO_symbol { bindings = <&to SYMBOL>; key-positions = <12 13>; layers = <DEFAULT NUMBER MOUSE>; };
+    MO_symbol { bindings = <&mo SYMBOL>; key-positions = <12 13>; layers = <DEFAULT NUMBER MOUSE>; };
     CO_Def { bindings = <&to DEFAULT>; key-positions = <34 35>; layers = <SYMBOL NUMBER MOUSE>; };
     CO_Mou { bindings = <&to MOUSE>; key-positions = <6 8>; layers = <DEFAULT SYMBOL NUMBER>; };
     CO_AT { bindings = <&kp LBKT>; key-positions = <39 40 41>; };
